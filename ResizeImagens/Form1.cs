@@ -41,6 +41,13 @@ namespace ResizeImagens
                 }
             }
         }
+        /// <summary>
+        /// Redimensionar a imagem para uma nova resolução
+        /// </summary>
+        /// <param name="imagem"></param>
+        /// <param name="largura"></param>
+        /// <param name="altura"></param>
+        /// <returns></returns>
         private Image RedimensionarImagem(Image imagem, int largura, int altura)
         {
             var destRect = new Rectangle(0, 0, largura, altura);
@@ -67,6 +74,12 @@ namespace ResizeImagens
 
             return destImage;
         }
+        /// <summary>
+        /// Redimensionar imagem com base numa percentgem.
+        /// </summary>
+        /// <param name="imagem"></param>
+        /// <param name="percentagem"></param>
+        /// <returns></returns>
         private Image RedimensionarImagem(Image imagem,int percentagem)
         {
             //Calcula a nova resolução com base na percentagem
